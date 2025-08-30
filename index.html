@@ -2,11 +2,67 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Il mio primo sito</title>
+  <title>Il mio sito personale</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    section { padding: 40px; max-width: 900px; margin: auto; }
+    h1, h2 { color: #2c3e50; }
+    .button {
+      display: inline-block; padding: 10px 20px; background: #3498db; color: white;
+      text-decoration: none; border-radius: 5px;
+    }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+  </style>
 </head>
 <body>
-  <h1>Benvenuto nel mio sito</h1>
-  <p>Clicca qui per scaricare il PDF:</p>
-  <a href="documenti/esempio.pdf" download>Scarica esempio.pdf</a>
+
+  <header>
+    <h1>Benvenuto nel mio sito</h1>
+    <nav>
+      <a href="#about">Chi sono</a>
+      <a href="#downloads">Download</a>
+      <a href="#contact">Contatti</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Chi sono</h2>
+    <p>Questa è una pagina personale dove puoi trovare articoli, risorse e documenti da scaricare.</p>
+    <img src="https://via.placeholder.com/800x300" alt="Immagine esempio" style="width:100%; border-radius:8px;">
+  </section>
+
+  <section id="downloads">
+    <h2>Documenti disponibili</h2>
+    <p>Clicca sui bottoni per scaricare i PDF:</p>
+    <a class="button" href="esempio.pdf" download>Scarica esempio.pdf</a>
+    <a class="button" href="documenti/altro.pdf" download>Scarica altro.pdf</a>
+  </section>
+
+  <section id="video">
+    <h2>Video</h2>
+    <p>Guarda il mio ultimo contenuto su YouTube:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+      frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Contattami</h2>
+    <form>
+      <label>Nome:</label><br>
+      <input type="text" name="name"><br><br>
+      <label>Email:</label><br>
+      <input type="email" name="email"><br><br>
+      <label>Messaggio:</label><br>
+      <textarea name="message"></textarea><br><br>
+      <button type="submit">Invia</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 - Il mio sito personale</p>
+  </footer>
+
 </body>
 </html>
