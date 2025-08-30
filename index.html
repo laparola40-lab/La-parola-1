@@ -4,25 +4,66 @@
   <meta charset="UTF-8">
   <title>Il mio sito personale</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    section { padding: 40px; max-width: 900px; margin: auto; }
-    h1, h2 { color: #2c3e50; }
-    .button {
-      display: inline-block; padding: 10px 20px; background: #3498db; color: white;
-      text-decoration: none; border-radius: 5px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
     }
-    footer { background: #2c3e50; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 50px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 5px 0;
+    }
+    .button:hover {
+      background: #2980b9;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    iframe {
+      max-width: 100%;
+      border: none;
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Benvenuto nel mio sito</h1>
     <nav>
       <a href="#about">Chi sono</a>
       <a href="#downloads">Download</a>
+      <a href="#video">Video</a>
       <a href="#contact">Contatti</a>
     </nav>
   </header>
@@ -30,39 +71,28 @@
   <section id="about">
     <h2>Chi sono</h2>
     <p>Questa è una pagina personale dove puoi trovare articoli, risorse e documenti da scaricare.</p>
-    <img src="https://via.placeholder.com/800x300" alt="Immagine esempio" style="width:100%; border-radius:8px;">
+    <p>Immagine esempio</p>
   </section>
 
   <section id="downloads">
     <h2>Documenti disponibili</h2>
-    <p>Clicca sui bottoni per scaricare i PDF:</p>
+    <p>Clicca sul bottone per scaricare il PDF:</p>
     <a class="button" href="esempio.pdf" download>Scarica esempio.pdf</a>
-    <a class="button" href="documenti/altro.pdf" download>Scarica altro.pdf</a>
   </section>
 
   <section id="video">
     <h2>Video</h2>
     <p>Guarda il mio ultimo contenuto su YouTube:</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-      frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
   </section>
 
   <section id="contact">
-    <h2>Contattami</h2>
-    <form>
-      <label>Nome:</label><br>
-      <input type="text" name="name"><br><br>
-      <label>Email:</label><br>
-      <input type="email" name="email"><br><br>
-      <label>Messaggio:</label><br>
-      <textarea name="message"></textarea><br><br>
-      <button type="submit">Invia</button>
-    </form>
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:tuoindirizzo@example.com">tuoindirizzo@example.com</a></p>
   </section>
 
   <footer>
-    <p>© 2025 - Il mio sito personale</p>
+    <p>© 2025 Il mio sito personale</p>
   </footer>
-
 </body>
 </html>
