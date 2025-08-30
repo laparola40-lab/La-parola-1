@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Meine persönliche Webseite</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f6f9; color: #333; }
+    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 50px; max-width: 900px; margin: auto; }
+    h1, h2 { color: #2c3e50; }
+    .button {
+      display: inline-block; padding: 12px 25px; background: #3498db; color: white;
+      text-decoration: none; border-radius: 6px; margin: 5px 0;
+    }
+    .button:hover { background: #2980b9; }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+    img { max-width: 100%; border-radius: 8px; margin-top: 15px; }
+    form input, form textarea { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px; }
+    form button { background: #27ae60; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; }
+    form button:hover { background: #1e8449; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Willkommen auf meiner Webseite</h1>
+    <nav>
+      <a href="#about">Über mich</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#video">Video</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Über mich</h2>
+    <p>Dies ist meine persönliche Seite. Hier teile ich Artikel, PDFs, nützliche Ressourcen und meine neuesten Inhalte.</p>
+    <img src="https://via.placeholder.com/800x300" alt="Beispielbild">
+  </section>
+
+  <section id="downloads">
+    <h2>Verfügbare Dokumente</h2>
+    <p>Klicken Sie, um die PDFs herunterzuladen:</p>
+    <a class="button" href="esempio.pdf" download>Beispiel.pdf herunterladen</a><br>
+    <a class="button" href="documenti/articolo.pdf" download>Artikel.pdf herunterladen</a>
+  </section>
+
+  <section id="video">
+    <h2>Video</h2>
+    <p>Mein neuestes YouTube-Video:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text" name="name">
+      <label>E-Mail:</label>
+      <input type="email" name="email">
+      <label>Nachricht:</label>
+      <textarea name="message" rows="5"></textarea>
+      <button type="submit">Senden</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 - Meine persönliche Webseite</p>
+  </footer>
+
+</body>
+</html>
